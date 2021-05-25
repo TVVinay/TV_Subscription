@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Newspaper SubscriptionType">
+    <test name="Test Newspaper SubscriptionType functionality">
+        <classes>
+            <class name="SubscriptionTest"/>
+        </classes>
+    </test>
+</suite>
