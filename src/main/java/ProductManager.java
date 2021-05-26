@@ -1,11 +1,11 @@
-public class NewsPaper implements ISubscription {
+public class ProductManager implements ISubscription {
 
     private Products.Newspaper name;
     private double weekDayAmount;
     private double saturdayAmount;
     private double sundayAmount;
 
-    public NewsPaper(Products.Newspaper name, double weekDayAmount, double saturdayAmount, double sundayAmount) {
+    public ProductManager(Products.Newspaper name, double weekDayAmount, double saturdayAmount, double sundayAmount) {
         this.name = name;
         this.weekDayAmount = weekDayAmount;
         this.saturdayAmount = saturdayAmount;

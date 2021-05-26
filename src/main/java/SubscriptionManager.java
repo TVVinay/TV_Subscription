@@ -42,14 +42,14 @@ public class SubscriptionManager {
         return totalSundayPrice;
     }
 
-    public double getOverallSubscriptionPrice(MonthlySubscription monthlySubscription, WeeklySubscription weeklySubscription, BiWeeklySubscription biweeklySubscription)
+    public double getTotalSubscriptionPriceforCurrentMonth(MonthlySubscription monthlySubscription, WeeklySubscription weeklySubscription, BiWeeklySubscription biweeklySubscription)
     {
         double monthlySubscriptionPrice = monthlySubscription.getSubscriptionPrice();
         double weeklySubscriptionPrice = weeklySubscription.getSubscriptionPrice();
         double biweeklySubscriptionPrice = biweeklySubscription.getSubscriptionPrice();
 
-        double OverallSubscriptionPrice = monthlySubscriptionPrice + weeklySubscriptionPrice + biweeklySubscriptionPrice;
-        return OverallSubscriptionPrice;
+        double totalSubscriptionPrice = monthlySubscriptionPrice + weeklySubscriptionPrice + biweeklySubscriptionPrice;
+        return totalSubscriptionPrice;
     }
 
 }

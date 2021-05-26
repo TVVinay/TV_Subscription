@@ -5,7 +5,6 @@ public class WeeklySubscription extends SubscriptionManager {
     public double getSubscriptionPrice() {
        double saturdayAmount = getSaturdayPrice() * calender.getTotalNumberOfSaturdaysInCurrentMonth();
        double sundayAmount = getSundayPrice() * calender.getTotalNumberOfSundaysInCurrentMonth();
-
        return saturdayAmount + sundayAmount;
     }
 }
